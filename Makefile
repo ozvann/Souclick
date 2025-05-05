@@ -7,12 +7,20 @@ JVM = java
 
 ### REGLES ESSENTIELLES ###
 
-Main.class : Main.java Affichage.class
+Main.class : Main.java Accueil.class
 	${JC} ${JCFLAGS} Main.java
 
 Affichage.class : Affichage.java
 	${JC} ${JCFLAGS} Affichage.java
 
+Accueil.class : Accueil.java Affichage.class ListenerGlobal.class PaintAccueil.class
+	${JC} ${JCFLAGS} Accueil.java
+
+ListenerGlobal.class : ListenerGlobal.java
+	${JC} ${JCFLAGS} ListenerGlobal.java
+
+PaintAccueil.class : PaintAccueil.java
+	${JC} ${JCFLAGS} PaintAccueil.java
 
 ### REGLES OPTIONNELLES ###
 

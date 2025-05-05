@@ -1,5 +1,6 @@
 public class Main{
-	public static void main(String[] args){
-		new Affichage(2, 2, 0);
+	public static void main(String[] args) {
+		Accueil accueil = new Accueil();
+		accueil.fenetre.setVisible(true);
 	}
 }
