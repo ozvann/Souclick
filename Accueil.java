@@ -13,8 +13,8 @@ public class Accueil extends Affichage{
 		JButton btn1 = new JButton("Jouer");
 		JButton btn2 = new JButton("Quitter");
 
-		btn1.setBounds(250,500,200,50);
-		btn2.setBounds(550,500,200,50);
+		btn1.setBounds(330,500,280,50);
+		btn2.setBounds(630,500,280,50);
 
 		ListenerGlobal obs = new ListenerGlobal(this.fenetre);
 		btn1.addActionListener(obs);

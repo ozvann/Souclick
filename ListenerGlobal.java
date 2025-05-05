@@ -12,7 +12,7 @@ public class ListenerGlobal implements ActionListener{
 		String composant = e.getActionCommand();
 		if(composant == "play"){
 			fenetre.dispose();
-			// new Jeux();
+			new Jeux();
 		} else if(composant == "quit"){
 			System.exit(0);
 		}

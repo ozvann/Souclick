@@ -2,9 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class Affichage{
+public class FenetreJeux{
 	protected JFrame fenetre;
-	public Affichage(){
+	public void Affichage(){
 		fenetre = new JFrame("Souclick");
 		fenetre.setSize(1280, 720);
 		fenetre.setResizable(false);
