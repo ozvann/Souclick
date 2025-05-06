@@ -10,7 +10,10 @@ JVM = java
 Main.class : Main.java Jeux.class
 	${JC} ${JCFLAGS} Main.java
 
-ListenerGlobal.class : ListenerGlobal.java Jeux.class
+Jeux.class : Jeux.java FenetreJeux.class PaintJeux.class ListenerGlobal.class
+	${JC} ${JCFLAGS} Jeux.java
+
+ListenerGlobal.class : ListenerGlobal.java
 	${JC} ${JCFLAGS} ListenerGlobal.java
 
 PaintJeux.class : PaintJeux.java
@@ -18,9 +21,6 @@ PaintJeux.class : PaintJeux.java
 
 FenetreJeux.class : FenetreJeux.java
 	${JC} ${JCFLAGS} FenetreJeux.java
-
-Jeux.class : Jeux.java FenetreJeux.class
-	${JC} ${JCFLAGS} Jeux.java
 
 
 ### REGLES OPTIONNELLES ###
