@@ -11,10 +11,9 @@ public class ListenerGlobal implements ActionListener{
 	public void actionPerformed(ActionEvent e){ 
 		String composant = e.getActionCommand();
 		if(composant == "play"){
-			fenetre.dispose();
-			new Jeux();
+			// fenetre.dispose();
 		} else if(composant == "quit"){
-			System.exit(0);
+			// System.exit(0);
 		}
 	}
 }

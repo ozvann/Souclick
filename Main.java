@@ -1,6 +1,6 @@
 public class Main{
 	public static void main(String[] args) {
-		Accueil accueil = new Accueil();
-		accueil.fenetre.setVisible(true);
+		Jeux jeux = new Jeux();
+		Jeux.fenetre.setVisible(true);
 	}
 }
