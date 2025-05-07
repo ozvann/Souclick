@@ -3,7 +3,7 @@ import java.awt.*;
 
 
 public class Jeux extends FenetreJeux{
-	public int ames, gold;
+	public int hollow, gold;
 	public Jeux(){
 		super();
 
@@ -12,7 +12,7 @@ public class Jeux extends FenetreJeux{
 		ListenerGlobal obs = new ListenerGlobal(fenetre);
 		panneau.setLayout(null);
 
-		ames = 5; 
+		this.hollow = 5; 
 
 		JButton kill_buny = new JButton("Tuer un lapin");
 		kill_buny.setBounds(100,50,200,50);
@@ -20,7 +20,7 @@ public class Jeux extends FenetreJeux{
 		kill_buny.setActionCommand("kill_buny");
 		panneau.add(kill_buny);
 
-		JLabel texte = new JLabel("ames " + ames);
+		JLabel texte = new JLabel("ames " + hollow);
 		texte.setBounds(650, 50, 200, 50);
 		panneau.add(texte);
 	}
